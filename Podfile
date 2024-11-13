@@ -1,13 +1,12 @@
-# Uncomment the next line to define a global platform for your project
 platform :ios, '13.0'
 
 source 'https://cdn.cocoapods.org/'
-source 'git@github.com:gonativeio/gonative-specs.git'
+source 'git@github.com:gonativeio/gonative-specs.git'  # Make sure Bitrise has access
 
-require_relative './plugins.rb'
+# Ensure the plugins file exists or remove this if not using any plugins
+require_relative './plugins.rb'  
 
-target default_app_target do
-  # Comment the next line if you don't want to use dynamic frameworks
+target 'default_app_target' do
   use_frameworks!
 
   # Pods for GonativeIO
@@ -15,13 +14,12 @@ target default_app_target do
   pod 'MedianIcons'
   pod 'SSZipArchive'
   
-  use_plugins!
+  use_plugins!  # Ensure plugins.rb exists, or remove this if not using plugins
 
   target 'MedianIOSTests' do
     inherit! :search_paths
     # Pods for testing
   end
-
 end
 
 post_install do |installer|
@@ -33,7 +31,8 @@ post_install do |installer|
     end
   end
 end
+
 target 'OneSignalNotificationServiceExtension' do
-	use_frameworks!
-	pod 'OneSignal', '~> 3.12'
+  use_frameworks!
+  pod 'OneSignal', '~> 3.12'
 end
