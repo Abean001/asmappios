@@ -1,0 +1,499 @@
+{
+  "general": {
+    "screenOrientation": {
+      "iphone": null,
+      "ipad": null,
+      "androidPhone": null,
+      "androidTablet": null
+    },
+    "userAgentRegexes": [],
+    "replaceStrings": [],
+    "nativeBridgeUrls": [],
+    "languages": [],
+    "userAgentAdd": "median",
+    "enableWindowOpen": true,
+    "forceUserAgent": "",
+    "publicKey": "zmqjqx",
+    "deviceRegKey": "54gwug1xz5axeczr6un8z38n5w",
+    "appName": "American School of Madrid",
+    "initialUrl": "https://ps.asmadrid.org/public/home_app.html",
+    "iosBundleId": "co.median.ios.zmqjqx",
+    "androidPackageName": "co.median.android.zmqjqx",
+    "iosUserAgentAdd": "median",
+    "androidUserAgentAdd": "median",
+    "androidSigningKey": "release",
+    "injectMedianJS": true,
+    "androidForceUserAgent": "",
+    "iosForceUserAgent": "",
+    "forceSessionCookieExpiry": 0,
+    "keepScreenOn": null,
+    "iosCustomHeaders": {},
+    "androidCustomHeaders": {},
+    "version": 47
+  },
+  "navigation": {
+    "tabNavigation": {
+      "tabSelectionConfig": [],
+      "tabMenus": [],
+      "active": false
+    },
+    "sidebarNavigation": {
+      "menuSelectionConfig": {
+        "redirectLocations": [
+          {
+            "regex": ".*",
+            "menuName": "default",
+            "loggedIn": true
+          }
+        ]
+      },
+      "menus": [
+        {
+          "active": true,
+          "items": [
+            {
+              "label": "Dashboard",
+              "url": "https://ps.asmadrid.org/guardian/app_home.html",
+              "icon": "fas fa-school-flag",
+              "subLinks": []
+            },
+            {
+              "label": "ID",
+              "url": "https://ps.asmadrid.org/guardian/app_id.html",
+              "icon": "fas fa-id-card",
+              "subLinks": []
+            },
+            {
+              "label": "Transportation",
+              "url": "https://ps.asmadrid.org/guardian/app_transportation.html",
+              "icon": "fas fa-bus",
+              "subLinks": []
+            },
+            {
+              "label": "Conferences",
+              "url": "https://ps.asmadrid.org/guardian/app_conference.html",
+              "icon": "fas fa-street-view",
+              "subLinks": []
+            },
+            {
+              "label": "Activities",
+              "url": "https://ps.asmadrid.org/guardian/app_asa.html",
+              "icon": "fas fa-dragon",
+              "subLinks": []
+            },
+            {
+              "label": "Directory",
+              "url": "https://ps.asmadrid.org/guardian/app_directory.html",
+              "icon": "fas fa-address-book",
+              "subLinks": []
+            },
+            {
+              "label": "Reports",
+              "url": "https://ps.asmadrid.org/guardian/app_reports.html",
+              "icon": "fas fa-file-export",
+              "subLinks": []
+            },
+            {
+              "label": "Payments",
+              "url": "https://ps.asmadrid.org/guardian/app_payment.html",
+              "icon": "fas fa-money-bill-1-wave",
+              "subLinks": []
+            },
+            {
+              "label": "Family Info",
+              "url": "https://ps.asmadrid.org/guardian/app_info.html",
+              "icon": "fas fa-circle-info",
+              "subLinks": []
+            },
+            {
+              "label": "Schedule",
+              "url": "https://ps.asmadrid.org/guardian/app_schedule.html",
+              "icon": "fas fa-list",
+              "subLinks": []
+            },
+            {
+              "label": "Attendance",
+              "url": "https://ps.asmadrid.org/guardian/app_attendance.html",
+              "icon": "fas fa-hand",
+              "subLinks": []
+            },
+            {
+              "label": "Grades",
+              "url": "https://ps.asmadrid.org/guardian/app_grades.html",
+              "icon": "fas fa-user-graduate",
+              "subLinks": []
+            },
+            {
+              "label": "Assignments",
+              "url": "https://ps.asmadrid.org/guardian/app_assignments.html",
+              "icon": "fas fa-layer-group",
+              "subLinks": []
+            }
+          ],
+          "name": "default"
+        }
+      ]
+    },
+    "regexInternalExternal": {
+      "rules": [
+        {
+          "mode": "external",
+          "label": "Non-web links",
+          "pagesToTrigger": "custom",
+          "regex": "^(?!https?://).*"
+        },
+        {
+          "mode": "appbrowser",
+          "label": "Facebook",
+          "pagesToTrigger": "custom",
+          "regex": "https?://([-\\w]+\\.)*facebook\\.com.*"
+        },
+        {
+          "mode": "appbrowser",
+          "label": "Twitter",
+          "pagesToTrigger": "custom",
+          "regex": "https?://([-\\w]+\\.)*twitter\\.com/.*"
+        },
+        {
+          "mode": "appbrowser",
+          "label": "Instagram",
+          "pagesToTrigger": "custom",
+          "regex": "https?://([-\\w]+\\.)*instagram\\.com/.*"
+        },
+        {
+          "mode": "appbrowser",
+          "label": "Google Maps",
+          "pagesToTrigger": "custom",
+          "regex": "https?://maps\\.google\\.com.*"
+        },
+        {
+          "mode": "appbrowser",
+          "label": "Google Maps Search",
+          "pagesToTrigger": "custom",
+          "regex": "https?://([-\\w]+\\.)*google\\.com/maps/search/.*"
+        },
+        {
+          "mode": "appbrowser",
+          "label": "LinkedIn",
+          "pagesToTrigger": "custom",
+          "regex": "https?://([-\\w]+\\.)*linkedin\\.com/.*"
+        },
+        {
+          "mode": "internal",
+          "label": "All pages on my domain",
+          "pagesToTrigger": "domain",
+          "regex": "https?:\\/\\/([-\\w]+\\.)*asmadrid.org(\\/.*)?$"
+        },
+        {
+          "mode": "appbrowser",
+          "label": "All Other Links",
+          "pagesToTrigger": "all",
+          "regex": ".*"
+        }
+      ],
+      "active": true
+    },
+    "androidPullToRefresh": false,
+    "iosPullToRefresh": true,
+    "navigationTitles": {
+      "titles": [
+        {
+          "id": "1",
+          "regex": "https?:\\/\\/(w{3}\\.)?sandbox.asmadrid.org\\/guardian\\/app_id.html\\/?$",
+          "customTitle": true,
+          "custom": false,
+          "url": "https://sandbox.asmadrid.org/guardian/app_id.html",
+          "showImage": false,
+          "title": "ID"
+        },
+        {
+          "id": "2",
+          "regex": "https?:\\/\\/(w{3}\\.)?sandbox.asmadrid.org\\/guardian\\/app_home.html\\/?$",
+          "custom": false,
+          "customTitle": true,
+          "url": "https://sandbox.asmadrid.org/guardian/app_home.html",
+          "showImage": false,
+          "title": "Student Selection"
+        }
+      ],
+      "active": true
+    },
+    "ignorePageFinishedRegexes": [],
+    "actionConfig": {
+      "actions": [
+        {
+          "id": "1",
+          "items": [
+            {
+              "icon": "fas fa-id-card",
+              "label": "",
+              "system": "refresh",
+              "url": ""
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "items": [
+            {
+              "icon": "fas fa-users-line",
+              "label": "",
+              "system": "refresh",
+              "url": ""
+            }
+          ]
+        }
+      ],
+      "actionSelection": [
+        {
+          "id": "1",
+          "label": "",
+          "regex": "https?:\\/\\/(w{3}\\.)?sandbox.asmadrid.org\\/guardian\\/app_id.html\\/?$",
+          "custom": false,
+          "url": "https://sandbox.asmadrid.org/guardian/app_id.html"
+        },
+        {
+          "id": "2",
+          "regex": "https?:\\/\\/(w{3}\\.)?sandbox.asmadrid.org\\/guardian\\/app_home.html\\/?$",
+          "custom": false,
+          "url": "https://sandbox.asmadrid.org/guardian/app_home.html"
+        }
+      ],
+      "active": true
+    },
+    "androidShowRefreshButton": false,
+    "iosShowRefreshButton": false,
+    "deepLinkDomains": {
+      "domains": [],
+      "enableAndroidApplinks": false
+    },
+    "navigationLevels": {
+      "levels": [],
+      "active": true
+    },
+    "toolbarNavigation": {
+      "enabled": false,
+      "visibilityByPages": "allPages",
+      "visibilityByBackButton": "backButtonActive",
+      "regexes": [
+        {
+          "enabled": true,
+          "regex": ".*"
+        }
+      ],
+      "items": [
+        {
+          "system": "back",
+          "titleType": "defaultText",
+          "visibility": "allPages",
+          "urlRegex": [
+            {
+              "enabled": true,
+              "regex": ".*"
+            }
+          ]
+        },
+        {
+          "system": "refresh",
+          "enabled": false,
+          "visibility": "allPages",
+          "urlRegex": [
+            {
+              "enabled": true,
+              "regex": ".*"
+            }
+          ]
+        },
+        {
+          "system": "forward",
+          "enabled": false,
+          "titleType": "defaultText",
+          "visibility": "allPages",
+          "urlRegex": [
+            {
+              "enabled": true,
+              "regex": ".*"
+            }
+          ]
+        }
+      ]
+    },
+    "redirects": [],
+    "iosShowOfflinePage": true,
+    "iosConnectionOfflineTime": 10,
+    "androidShowOfflinePage": true,
+    "androidConnectionOfflineTime": 10,
+    "maxWindows": {
+      "enabled": false,
+      "numWindows": 5,
+      "autoClose": false
+    },
+    "iosSettings": {},
+    "swipeGestures": null
+  },
+  "styling": {
+    "transitionInteractiveDelayMax": 0.2,
+    "menuAnimationDuration": 0.15,
+    "disableAnimations": false,
+    "hideWebviewAlpha": 0.5,
+    "iosDarkMode": "auto",
+    "iosTitleColor": "#FFFFFF",
+    "iosTitleColorDark": "#ffffff",
+    "iosTintColor": "#0E0D08",
+    "iosTintColorDark": "#ffffff",
+    "iosSidebarTextColor": "#0E0D08",
+    "iosSidebarTextColorDark": "#ffffff",
+    "iosStatusBarBackgroundColor": "#ffffffff",
+    "iosStatusBarBackgroundColorDark": "#000000",
+    "iosEnableBlurInStatusBar": false,
+    "iosSidebarBackgroundColor": "#f8f8f8",
+    "iosSidebarBackgroundColorDark": "#202020",
+    "iosNavigationBarTintColor": "#00427C",
+    "iosNavigationBarTintColorDark": "#202020",
+    "iosTabBarTintColor": "#f8f8f8",
+    "iosTabBarTintColorDark": "#000000",
+    "icon": "https://s3.amazonaws.com/gonativeio/app_files/zmqjqx/app_icon_ios_1708279514834.png",
+    "iosHeaderImage": "https://s3.amazonaws.com/gonativeio/app_files/zmqjqx/app_icon_ios_1708279514834.png",
+    "showActionBar": true,
+    "showNavigationBar": true,
+    "iosSidebarFont": "Default",
+    "androidHideTitleInActionBar": false,
+    "navigationTitleImage": false,
+    "iosTheme": "default",
+    "androidTheme": "auto",
+    "androidBackgroundColor": "#FFFFFF",
+    "androidSidebarBackgroundColor": "#FFFFFF",
+    "androidSidebarForegroundColor": "#1A100B",
+    "androidActionBarBackgroundColor": "#00427C",
+    "androidActionBarForegroundColor": "#FFFFFF",
+    "androidPullToRefreshColor": "#1A100B",
+    "androidAccentColor": "#000000",
+    "androidSidebarSeparatorColor": "#CCCCCC",
+    "androidSidebarHighlightColor": "#1A100B",
+    "androidTabBarBackgroundColor": "#FFFFFF",
+    "androidTabBarTextColor": "#949494",
+    "androidTabBarIndicatorColor": "#1A100B",
+    "androidTabPressedBackgroundColor": "#CCCCCC",
+    "androidStatusBarBackgroundColor": "#5C5C5C",
+    "androidShowLogoInSideBar": true,
+    "androidShowAppNameInSideBar": true,
+    "androidSwipeNavigationBackgroundColor": "#FFFFFF",
+    "androidSwipeNavigationActiveColor": "#000000",
+    "androidSwipeNavigationInactiveColor": "#666666",
+    "androidActionBarBackgroundColorDark": "#333333",
+    "androidStatusBarBackgroundColorDark": "#333333",
+    "androidActionBarForegroundColorDark": "#FFFFFF",
+    "androidAccentColorDark": "#FFFFFF",
+    "androidBackgroundColorDark": "#333333",
+    "androidSidebarForegroundColorDark": "#FFFFFF",
+    "androidSidebarBackgroundColorDark": "#333333",
+    "androidSidebarSeparatorColorDark": "#666666",
+    "androidSidebarHighlightColorDark": "#FFFFFF",
+    "androidPullToRefreshColorDark": "#FFFFFF",
+    "androidTabBarTextColorDark": "#FFFFFF",
+    "androidTabBarBackgroundColorDark": "#333333",
+    "androidTabBarIndicatorColorDark": "#666666",
+    "androidTabPressedBackgroundColorDark": "#999999",
+    "androidSwipeNavigationBackgroundColorDark": "#333333",
+    "androidSwipeNavigationActiveColorDark": "#FFFFFF",
+    "androidSwipeNavigationInactiveColorDark": "#666666",
+    "androidWebviewTextZoom": null,
+    "iosIcon": "https://s3.amazonaws.com/gonativeio/app_files/zmqjqx/app_icon_ios_1708279514834.png",
+    "iosStatusBarStyle": "auto",
+    "iosEnableOverlayInStatusBar": false,
+    "androidStatusBarStyle": "auto",
+    "androidEnableOverlayInStatusBar": false,
+    "androidIcon": "https://s3.amazonaws.com/gonativeio/app_files/zmqjqx/app_icon_ios_1708279514834.png",
+    "iosActivityIndicatorColor": "#808080",
+    "iosActivityIndicatorColorDark": "#808080",
+    "androidActivityIndicatorColor": "#808080",
+    "androidActivityIndicatorColorDark": "#808080",
+    "navigationTitleImageLocation": "assets/defaults/app-icon-placeholder.png",
+    "navigationTitleImageLocationDark": "assets/defaults/app-icon-placeholder.png",
+    "androidHeaderImage": "assets/defaults/app-icon-placeholder.png",
+    "androidHeaderImageDark": "assets/defaults/app-icon-placeholder.png",
+    "iosHeaderImageDark": "https://s3.amazonaws.com/gonativeio/app_files/zmqjqx/app_icon_ios_1708279514834.png",
+    "customIcons": {},
+    "splashScreen": {
+      "ios": {
+        "backgroundColor": "#FFFFFF",
+        "backgroundColorDark": "#0E0D08",
+        "backgroundImage": "https://s3.amazonaws.com/gonativeio/app_files/zmqjqx/1708279676026_eu6uqq9zmt590_FFFFFF_1_2x2.png",
+        "backgroundImageDark": "https://s3.amazonaws.com/gonativeio/app_files/zmqjqx/1708279676044_py6kkx3vd28ny_0E0D08_1_2x2.png",
+        "centerImage": "https://s3.amazonaws.com/gonativeio/app_files/zmqjqx/ASM_Logo_Full_Color_CMYK2_1708279581690.jpeg",
+        "centerImageDark": "https://s3.amazonaws.com/gonativeio/app_files/zmqjqx/ASM_Logo_Full_Color_CMYK2_1708279620278.jpeg",
+        "animationLoop": "once",
+        "animation": null,
+        "animationDark": null,
+        "animationFrame": null,
+        "animationFrameDark": null,
+        "animated": false
+      },
+      "android": {
+        "launchImages": {
+          "mdpi": "https://s3.amazonaws.com/gonativeio/app_files/zmqjqx/1708279676394_5t8aygt9cpd1y_180x180.png",
+          "hdpi": "https://s3.amazonaws.com/gonativeio/app_files/zmqjqx/1708279676406_t89ppqz3dnnrw_270x270.png",
+          "xhdpi": "https://s3.amazonaws.com/gonativeio/app_files/zmqjqx/1708279676419_9t2ndavm486tw_360x360.png",
+          "xxhdpi": "https://s3.amazonaws.com/gonativeio/app_files/zmqjqx/1708279676433_wvzuu7d5tk9ur_540x540.png",
+          "xxxhdpi": "https://s3.amazonaws.com/gonativeio/app_files/zmqjqx/1708279676509_fjwmn8jngj3uc_720x720.png"
+        },
+        "launchImagesDark": {
+          "mdpi": "https://s3.amazonaws.com/gonativeio/app_files/zmqjqx/1708279676578_2hd7ywf0n2tcg_180x180.png",
+          "hdpi": "https://s3.amazonaws.com/gonativeio/app_files/zmqjqx/1708279676606_k38h59n6eaw5m_270x270.png",
+          "xhdpi": "https://s3.amazonaws.com/gonativeio/app_files/zmqjqx/1708279676650_ejf3dvhd3krbu_360x360.png",
+          "xxhdpi": "https://s3.amazonaws.com/gonativeio/app_files/zmqjqx/1708279676683_rv3xyq82892rw_540x540.png",
+          "xxxhdpi": "https://s3.amazonaws.com/gonativeio/app_files/zmqjqx/1708279676749_a887t5tbvh2ky_720x720.png"
+        },
+        "backgroundColor": "#FFFFFF",
+        "backgroundColorDark": "#1A100B",
+        "showSplash": true,
+        "animationLoop": "once",
+        "animation": null,
+        "animationDark": null,
+        "animationFrame": null,
+        "animationFrameDark": null,
+        "animated": false
+      }
+    },
+    "androidSystemNavBarColor": "#FFFFFF",
+    "androidSystemNavBarColorDark": "#000000",
+    "forceViewportWidth": null,
+    "pinchToZoom": null,
+    "iosDynamicType": null
+  },
+  "permissions": {
+    "usesGeolocation": false,
+    "androidDownloadToPublicStorage": false,
+    "enableWebRTCamera": false,
+    "enableWebRTCMicrophone": false,
+    "iosLocationUsageDescription": "",
+    "iosCameraUsageDescription": "",
+    "iosMicrophoneUsageDescription": "",
+    "iOSATTUserTrackingDescription": "",
+    "iOSRequestATTConsentOnLoad": false
+  },
+  "developmentTools": {
+    "enableWebConsoleLogs": false
+  },
+  "services": {
+    "oneSignal": {
+      "active": true,
+      "applicationId": "65e32b11-2424-4637-91bd-2556a29da829",
+      "iosPluginName": "OneSignalPlugin"
+    }
+  },
+  "script": {},
+  "contextMenu": {
+    "linkActions": [
+      "copyLink",
+      "openExternal"
+    ],
+    "enabled": false
+  },
+  "allowZoom": null,
+  "security": {
+    "network": {
+      "allowInsecure": null
+    }
+  }
+}
